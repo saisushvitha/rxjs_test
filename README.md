@@ -24,7 +24,9 @@ This sample angular code developed demonstrates a RxJs Observables importance Re
 
 - global angular cli - v12.2
 
-## To run the code 
+## To run the code
+To start the app open the command prompt with the code path 
+1. Do #npm install first to download the node modules required.
 
-To start the app open the command prompt with the code path and type npm start.
+2. Than type #npm start to start the application
  
