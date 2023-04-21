@@ -1,0 +1,3 @@
+<mat-nav-list *ngIf="cities$ | async as cities">
+  <a mat-list-item *ngFor="let city of cities" routerLink='{{city.id}}' routerLinkActive="active">{{city.name}}</a>
+</mat-nav-list>

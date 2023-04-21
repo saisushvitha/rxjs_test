@@ -1,0 +1,10 @@
+<div class="current-conditions-container" *ngIf="cityConditions$ | async as cityConditions">
+  <div>
+  
+  <h1 id="header">Current Conditions for {{cityConditions?.name}}</h1>
+  <h1 >{{formattedDate}}</h1>
+  <h3 id="tempLabel">Temperature: {{cityConditions?.temp}} C</h3>
+  <h3 id="windLabel">Wind Speed: {{cityConditions?.windSpeed}} km/hr</h3>
+</div>
+
+

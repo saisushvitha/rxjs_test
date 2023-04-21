@@ -1,0 +1,12 @@
+<mat-card class="mat-tn-1">
+<div *ngIf="cityConditions$">
+  <app-current-conditions [cityConditions$]="cityConditions$"></app-current-conditions>
+</div>
+</mat-card>
+
+<mat-card class="mat-tn-1">
+<div class="forcast-tn" *ngIf="forecastConditions$">
+  <app-forecast [forecastConditions$]="forecastConditions$"></app-forecast>
+</div>
+</mat-card>
+

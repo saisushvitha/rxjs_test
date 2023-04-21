@@ -1,0 +1,21 @@
+<div>
+<div>
+    <h1 id="header">Forecast</h1>
+  </div>
+  
+  <div >
+    <mat-grid-list cols="4" rowHeight="2:1" [gutterSize]="'2px'"  >
+      <mat-grid-tile *ngFor="let forecast of forecastData">
+        <mat-card [class.mat-elevation-z8]="true" class="example-card">
+          <mat-card-header style ="text-align: center;" >
+            <mat-card-title id="dayText" class="mat-tn">{{ forecast.day}}</mat-card-title>
+          </mat-card-header>
+          <!-- <mat-card-content> -->
+            <p id="tempText" class="p-tn mat-tn">{{ forecast.temp }}&#176;C</p>  
+          <!-- </mat-card-content> -->
+        </mat-card>
+      </mat-grid-tile>
+      
+    </mat-grid-list>
+  </div>
+</div>
